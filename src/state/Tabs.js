@@ -7,7 +7,7 @@ class Tabs extends React.Component {
       };
     handleButtonClick(index){
         console.log('clicked, '+ index)
-        this.setState({ currentTabIndex: index })
+        //this.setState({ currentTabIndex: index })
     }
     renderButtons(){
         return this.props.tabs.map((tab, index) => (
@@ -21,7 +21,7 @@ class Tabs extends React.Component {
         return (
             <div className='content'>
                 {currentTab.content}
-            </div>
+            </div> 
         )
 
     }

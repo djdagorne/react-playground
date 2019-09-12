@@ -31,4 +31,11 @@ describe(`Tabs Component`, () => {
       const wrapper = shallow(<Tabs tabs={tabsProp} />)
       expect(toJson(wrapper)).toMatchSnapshot()
     })
+
+    it('closes the first tab and opens any clicked tab', () => {
+      const wrapper = shallow(<Tabs tabs={tabsProp} />)
+      wrapper.find('button')
+      console.log(wrapper.find('button').at(1).simulate('click'))
+      expect(toJson(wrapper)).toMatchSnapshot()
+    })
 })
