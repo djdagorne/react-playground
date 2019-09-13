@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShoppingItem Component  renders the item when supplied 1`] = `
+<li>
+  <h2
+    style={
+      Object {
+        "textDecoration": null,
+      }
+    }
+  >
+    test-item
+  </h2>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    check
+  </button>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    delete
+  </button>
+</li>
+`;
+
+exports[`ShoppingItem Component  strikes through checked items 1`] = `
+<li>
+  <h2
+    style={
+      Object {
+        "textDecoration": "line-through",
+      }
+    }
+  >
+    checked-item
+  </h2>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    check
+  </button>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    delete
+  </button>
+</li>
+`;
